@@ -6,7 +6,7 @@
 .profile__info {
     display: grid;
     grid-template-areas: "title button" "description description";
-    grid-template-columns: minmax(auto, 373px) auto;
+    grid-template-columns: minmax(auto, 265px) auto;
 }
 
 .profile__edit-button {
@@ -33,6 +33,9 @@
     line-height: 48px;
     font-weight: 500;
     grid-area: title;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     margin: 0;
 }
 
@@ -75,18 +78,17 @@
 
 @media screen and (max-width: 480px) {
     .profile {
-        background-color: pink;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .profile-info {
+    .profile__info {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
     }
-    .profile-description {
+    .profile__description {
         width: 100%;
         text-align: center;
     }
