@@ -114,3 +114,28 @@
     width: 21px;
     height: 18px;
 }
+
+@media screen and (max-width: 480px) {
+    .profile {
+        background-color: pink;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .profile-description {
+        width: 100%;
+        text-align: center;
+    }
+    .profile__add-button {
+        margin: 0;
+        width: 100%;
+    }
+} 
+
+
