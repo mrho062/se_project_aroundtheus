@@ -1,10 +1,24 @@
 .footer {
-    display: grid;
+    width: 318px;
+    height: 18px;
 }
-
 .footer__copyright {
     color: #545454;
     margin-left: auto;
     margin-top: 42px;
-    line-height: 18px;
+    margin-bottom: 0;
+    line-height: 21.78px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        width: 282px;
+        height: 14px;
+    }
+    .footer__copyright {
+        line-height: 16.94px;
+        font-size: 14px;
+    }
 }

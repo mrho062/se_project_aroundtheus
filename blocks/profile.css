@@ -13,7 +13,14 @@
     background: transparent url(../images/edit-icon.svg) center no-repeat;
     height: 24px;
     width: 24px;
+    border-color: #FFFFFF;
+    border-width: 1px;
     grid-area: button;
+}
+
+.profile__edit-button:hover {
+    opacity: 60%;
+    transition: opacity 0.25s linear;
 }
 
 .profile__add-button {
@@ -21,10 +28,12 @@
     height: 50px;
     width: 150px;
     margin-left: auto;
+    border-radius: 2px;
+    border-color: #FFFFFF;
 }
 
 .profile__add-button:hover {
-    opacity: 70%;
+    opacity: 60%;
     transition: opacity 0.25s linear;
 }
 
@@ -71,7 +80,6 @@
     .profile__add-button {
         height: 30px;
         width: 40px;
-        margin-left: auto;
         transition: 0.25s;
     }
 }
@@ -97,3 +105,14 @@
         width: 100%;
     }
 } 
+
+@media screen and (max-width: 480px) {
+    .profile__title {
+        line-height: 26.63px;
+        font-size: 22px;
+    }
+    .profile__description {
+        line-height: 16.94px;
+        font-size: 14px;
+    }
+}
