@@ -12,6 +12,9 @@ The project is a webpage displaying different destinations in the U.S. with a pr
 Some techniques that were used include: media queries to add responsive webpage design, minmax() function to adjust the gaps as the window width decreases, and display grid to evenly space the gaps of the cards in a grid-like format.
 Some technologies that were used include: Figma to examine the layout of the design templates for both desktop and mobile and the inspect option in Google Chrome to test some CSS properties adjustments.
 
+**Video**
+https://drive.google.com/file/d/1R3LdrPe9iCqWlAykpWUHhcUcxtin3KXi/view?usp=sharing
+
 **Figma**
 
 - [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)
