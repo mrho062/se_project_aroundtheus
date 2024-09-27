@@ -1,21 +1,20 @@
 .footer {
-    width: 318px;
-    height: 18px;
+    width: 880px;
+    margin: 42px auto;
+    display: flex;
+    flex-direction: column;
+   
 }
 .footer__copyright {
     color: #545454;
-    display: flex;
-    margin: 42px auto;
     line-height: 21.78px;
     font-weight: 400;
     font-size: 18px;
-    justify-content: end;
 }
 
 @media screen and (max-width: 480px) {
     .footer {
         width: 282px;
-        height: 14px;
     }
     .footer__copyright {
         line-height: 16.94px;

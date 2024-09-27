@@ -7,17 +7,20 @@
     display: grid;
     grid-template-areas: "title button" "description description";
     grid-template-columns: minmax(auto, 400px) auto;
+    align-content: center;
+    align-items: center;
+    row-gap: 7px;
 }
 
 .profile__edit-button {
     background: transparent url(../images/edit-icon.svg) center no-repeat;
     height: 24px;
     width: 24px;
-    border-color: #FFFFFF;
-    border-width: 1px;
+    border: 1px solid #FFFFFF;
     grid-area: button;
     margin-top: 15px;
     gap: 18px;
+    cursor: pointer;
 }
 
 .profile__edit-button:hover {
@@ -29,9 +32,11 @@
     background: transparent url(../images/add-icon.svg) center no-repeat;
     height: 50px;
     width: 150px;
+    margin-top: 30px;
     margin-left: auto;
+    border: 2px solid #FFFFFF;
     border-radius: 2px;
-    border-color: #FFFFFF;
+    cursor: pointer;
 }
 
 .profile__add-button:hover {
@@ -40,6 +45,7 @@
 }
 
 .profile__title {
+    height: 48px;
     font-size: 42px;
     line-height: 48px;
     font-weight: 500;
@@ -52,12 +58,14 @@
 
 .profile__description {
     font-size: 18px;
-    line-height: 22px;
+    height: 22px;
+    font-weight: 400;
+    line-height: 21.78px;
     grid-area: description;
     margin: 0;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: 373px;
+    max-width: 415px;
     overflow: hidden;
 }
 
