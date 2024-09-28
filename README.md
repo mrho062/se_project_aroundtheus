@@ -1,5 +1,8 @@
 # Project 3: Around The U.S.
 
+**Github Pages Link**
+https://mrho062.github.io/se_project_aroundtheus
+
 ### Overview
 
 - Intro
