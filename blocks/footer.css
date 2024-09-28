@@ -12,6 +12,18 @@
     font-size: 18px;
 }
 
+@media screen and (max-width: 881px) {
+    .footer {
+        width: 580px;
+    }
+}
+
+@media screen and (max-width: 581px) {
+    .footer {
+        width: 280px;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .footer {
         width: 282px;
