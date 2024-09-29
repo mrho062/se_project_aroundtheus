@@ -9,8 +9,6 @@
 }
 .header::after {
     width: 880px;
-    top: 119px;
-    left: 200px;
     margin-top: 41px;
     opacity: 70%;
     border-bottom: 1px solid #545454;
@@ -23,6 +21,5 @@
         width: 126px;
         height: 24px;
         margin-left: 27px;
-        
     }
 }

@@ -1,15 +1,15 @@
 .footer {
     width: 880px;
-    margin: 42px auto;
+    margin: 25px auto;
     display: flex;
     flex-direction: column;
-   
 }
 .footer__copyright {
     color: #545454;
     line-height: 21.78px;
     font-weight: 400;
     font-size: 18px;
+    margin: 0;
 }
 
 @media screen and (max-width: 881px) {
@@ -27,6 +27,7 @@
 @media screen and (max-width: 480px) {
     .footer {
         width: 282px;
+        
     }
     .footer__copyright {
         line-height: 16.94px;
