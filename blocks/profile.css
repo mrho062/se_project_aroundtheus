@@ -110,7 +110,7 @@
         align-items: center;
         width: 100%;
         max-width: 282px;
-        row-gap: 1px;
+        row-gap: 8px;
         margin-top: 30px;
     }
     .profile__image {
@@ -127,7 +127,7 @@
         margin-left: 10px;
     }
     .profile__add-button {
-        margin-top: 36px;
+        margin-top: 33px;
         margin-left: 1px;
         width: 282px;
         height: 50px;
