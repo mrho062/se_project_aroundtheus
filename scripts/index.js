@@ -32,14 +32,14 @@ const profileTitle = document.querySelector(".profile__title");
 const profileDescription = document.querySelector(".profile__description");
 const profileTitleInput = document.querySelector("#profile-title-input");
 const profileDescriptionInput = document.querySelector("#profile-description-input");
-const profileEditForm = profileEditModal.querySelector(".modal__form");
+const profileEditForm = profileEditModal.querySelector("#profile-form");
 const profileCloseButton = document.querySelector("#profile-modal-close");
 const cardTemplate = document.querySelector("#card-template").content.firstElementChild;
 const cardListEl = document.querySelector('.cards__list');
 
 /*Functions*/
 function closePopup() {
-    profileEditModal.classList.remove("modal__opened");
+    profileEditModal.classList.remove("modal_opened");
 }
 function getCardElement(cardData) {
     const cardElement = cardTemplate.cloneNode(true);
