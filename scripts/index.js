@@ -24,4 +24,17 @@ const cardData6 = {
 };
 const initialCards = [cardData1, cardData2, cardData3, cardData4, cardData5, cardData6];
 
-console.log(initialCards);
+
+/*Elements*/
+const profileEditButton = document.querySelector("#profile-edit-button");
+const profileEditModal = document.querySelector("#profile-edit-modal");
+
+profileEditButton.addEventListener("click", () => {
+    profileEditModal.classList.add('modal__opened');
+})
+
+const profileCloseButton = document.querySelector("#profile-modal-close");
+
+profileCloseButton.addEventListener("click", () => {
+    profileEditModal.classList.remove('modal__opened');
+})
