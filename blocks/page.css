@@ -7,8 +7,6 @@
     box-sizing: border-box;
     border: 0;
     background-size: 100%;
-    /*justify-content: start;
-    width: min(1000px, calc(70% + 100px));*/
 }
 .page__section {
     max-width: 882px;
@@ -29,77 +27,3 @@
    background: black no-repeat;
 }
 
-/*@media screen and (max-width: 882px) {
-    .page {
-       max-width: 100%;
-       background-size: cover;
-       width: 100vw;
-    }
-}
-@media screen and (max-width: 840px) {
-    .page {
-        max-width: 100%;
-        background-size: cover;
-        width: 100vw;
-    }
-}
-@media screen and (max-width: 774px) {
-    .page {
-        max-width: 100%;
-        background-size: cover;
-        width: 100vw;
-    }
-}
-
-@media screen and (max-width: 710px) {
-    .page {
-        max-width: 100%;
-        background-size: cover;
-        width: 100vw;
-    }
-}
-
-
-@media screen and (max-width: 690px) {
-    .page {
-        max-width: 100%;
-        background-size: cover;
-        width: 100vw;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .page {
-        max-width: 100%;
-        background-size: cover;
-        width: 100vw;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .page {
-        max-width: 100%;
-        background-size: cover;
-        width: 100vw;
-    }
-}
-/*@media screen and (max-width: 1100px) {
-    .page__section {
-        margin: 0 20px;
-        max-width: calc(100% - 40px);
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .page__section {
-        margin: 0 20px;
-        max-width: calc(100% - 40px);
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .page__section {
-        margin: 0 20px;
-        max-width: calc(100% - 40px);
-    }
-}*/

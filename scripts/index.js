@@ -34,8 +34,6 @@ const profileTitle = document.querySelector(".profile__title");
 const profileDescription = document.querySelector(".profile__description");
 const profileTitleInput = document.querySelector("#profile-title-input");
 const profileDescriptionInput = document.querySelector("#profile-description-input");
-//const cardTitle = document.querySelector(".card__title");
-//const cardURL = document.querySelector(".card__image");
 const cardTitleInput = document.querySelector("#card-title-input");
 const cardURLInput = document.querySelector("#card-url-input");
 const profileEditForm = profileEditModal.querySelector(".modal__form");
@@ -75,11 +73,6 @@ function getCardElement(cardData) {
         openPopup(previewImageModal);
         previewImage.src = cardImageEl.src;
         previewImage.alt = cardImageEl.alt;
-       //previewImage.setAttribute("background-image", cardImageEl.src);
-        //previewImage.setAttribute("background-image", url(cardImageEl.src));
-       //previewImageModal.setAttribute("background-image", url(cardImageEl.src));
-        // cardData.link = cardImageEl.src;
-        // cardData.name = cardImageEl.alt;
     });
     previewCloseButton.addEventListener("click", () => {
         closePopup(previewImageModal);
@@ -109,16 +102,7 @@ function handleCardEditSubmit(e) {
          name: cardTitleInput.value,
          link: cardURLInput.value,
      };
-     renderCard(cardNewData, cardListEl);
-    //const cardTitle = cardTitleInput.value;
-    //const cardURL = cardURLInput.value;
-    //console.log(cardTitle);
-    //console.log(cardURL);
-    //const cardElement = getCardElement({cardTitle, cardURL});
-    //console.log(cardElement);
-    //cardListEl.prepend(cardElement);
-    //cardTitle.textContent = cardTitleInput.value;
-    //cardURL.url = cardURLInput.value;
+    renderCard(cardNewData, cardListEl);
     closePopup(newCardAddModal);
 }
 
@@ -126,7 +110,6 @@ function handleCardEditSubmit(e) {
 profileEditButton.addEventListener("click", () => {
     profileTitleInput.value = profileTitle.textContent;
     profileDescriptionInput.value = profileDescription.textContent;
-    //profileEditModal.classList.add('modal_opened');
     openPopup(profileEditModal);
 });
 
@@ -134,8 +117,6 @@ profileCloseButton.addEventListener("click",() => {closePopup(profileEditModal)}
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
 
 newCardAddButton.addEventListener("click", () => {
-    //cardTitleInput.value = cardTitle.textContent;
-    //newCardAddModal.classList.add('modal_opened');
     openPopup(newCardAddModal);
 });
 
