@@ -42,7 +42,20 @@
     border: none;
     cursor: pointer;
 }
+.card__like-button_active {
+    background-image: url("../images/like-active.svg");
+}
 .card__like-button:hover {
     opacity: 50%;
     transition: opacity 0.25s linear;
+}
+.card__trash-button {
+    background: transparent url(../images/trash-icon.svg) center no-repeat;
+    width: 19px;
+    height: 16px;
+    margin-left: 230px;
+    margin-bottom: 600px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
 }

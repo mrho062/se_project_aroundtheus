@@ -31,7 +31,11 @@
             ></button>
             <p class="profile__description">Explorer</p>
           </div>
-          <button type="button" class="profile__add-button"></button>
+          <button
+            type="button"
+            class="profile__add-button"
+            id="profile-add-button"
+          ></button>
         </section>
         <section class="cards page__section">
           <ul class="cards__list"></ul>
@@ -62,12 +66,43 @@
         </form>
       </div>
     </div>
+    <div class="modal" id="card-add-modal">
+      <div class="modal__container">
+        <button class="modal__close" id="card-modal-close"></button>
+        <p class="modal__heading">New Place</p>
+        <form class="modal__form" id="card-form">
+          <input
+            type="text"
+            name="title"
+            id="card-title-input"
+            placeholder="Title"
+            class="modal__input"
+          />
+          <input
+            type="text"
+            name="url"
+            id="card-url-input"
+            placeholder="URL"
+            class="modal__input"
+          />
+          <button class="modal__button">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" id="preview-image-modal">
+      <div class="modal__container" id="preview-image-container">
+        <img class="modal__image" src="" alt="" />
+        <button class="modal__close" id="preview-modal-close"></button>
+      </div>
+    </div>
     <template id="card-template">
       <li class="card">
         <img class="card__image" src="" alt="" />
         <div class="card__description">
           <h2 class="card__title"></h2>
           <button type="button" class="card__like-button"></button>
+          <button type="button" class="card__trash-button"></button>
         </div>
       </li>
     </template>
