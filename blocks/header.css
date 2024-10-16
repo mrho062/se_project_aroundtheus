@@ -10,14 +10,6 @@
     width: 173px;
     height: 33px;
 }
-/* .header::after {
-    width: 880px;
-    margin-top: 41px;
-    opacity: 70%;
-    border-bottom: 1px solid #545454;
-    display: block;
-    content: '';
-} */
 
 @media screen and (max-width: 480px) {
     .header {
