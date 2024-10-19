@@ -51,10 +51,14 @@ const previewText = document.querySelector(".preview__text");
 /*Functions*/
 function closePopup(modal) {
     modal.classList.remove("modal_opened");
+    
+    // modal.classList.remove('show');
 }
 function openPopup(modal) {// modalContainer) {
     modal.classList.add("modal_opened");
+    // modal.classList.add('show');
     //modalContainer.classList.add('show');
+
 }
 function getCardElement(cardData) {
     const cardElement = cardTemplate.cloneNode(true);
