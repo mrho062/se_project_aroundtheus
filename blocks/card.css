@@ -46,11 +46,11 @@
     background-image: url("../images/like-active.svg");
 }
 .card__like-button:hover {
-    opacity: 50%;
+    opacity: 60%;
     transition: opacity 0.25s linear;
 }
 .card__trash-button {
-    background: transparent url(../images/trash-icon.svg) center no-repeat;
+    background: transparent url(../images/trash.svg) center no-repeat;
     width: 19px;
     height: 16px;
     margin-left: 230px;
@@ -58,4 +58,8 @@
     border: none;
     cursor: pointer;
     position: absolute;
+}
+.card__trash-button:hover {
+    opacity: 60%;
+    transition: opacity 0.25s linear;
 }
