@@ -91,6 +91,11 @@
     font-size: 17px;
 }
 
+.modal__button:hover {
+    opacity: 85%;
+    transition: opacity 0.25s linear;
+}
+
 .modal__input {
     max-width: 358px;
     width: 100%;
@@ -106,6 +111,10 @@
     border-style: solid;
     border-bottom: 1px solid rgb(84, 84, 84, 0.2);
 
+}
+
+.modal__input::placeholder {
+    opacity: 35%;
 }
 
 
