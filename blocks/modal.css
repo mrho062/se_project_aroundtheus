@@ -44,7 +44,7 @@
     background-size: contain;
 }
 
-.preview__text {
+.modal__preview-text {
     position: absolute;
     display: block;
     top: calc(100% + 1px);
@@ -146,16 +146,19 @@
         font-size: 18px;
         margin-top: -8px;
         margin-bottom: 63px;
+        margin-left: 2px;
     }
     .modal__input {
         font-size: 13.8px;
         height: 34px;
+        width: 238px;
         /* line-height: 30px; */
     }
     .modal__button {
         width: 237px;
         height: 46px;
         margin-top: 50px;
+        margin-left: 3px;
         font-size: 14px;
     }
     .modal__close {
