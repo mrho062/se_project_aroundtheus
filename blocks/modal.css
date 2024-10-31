@@ -63,13 +63,21 @@
 
 .modal__container {
     position: relative;
-    padding: 25px 22px;
+    padding: 34px 36px 36.51px 36px;
+    /* padding: 34px 0 0 36px; */
     background-color: #fff;
     margin: auto;
     border-radius: 10px;
+    /* box-sizing: border-box; */
+    /* width: 358px; */
     /* width: 362px;
     height: 260px; */
-    max-width: 362px;
+    /* width: 427px; */
+    /* height: 269.499px; */
+    /* max-height: 259.499px; */
+    max-width: 358px;
+    /* box-sizing: border-box; */ 
+    /* max-width: 360px; */
     width: 100%;
     font-family: 'Inter', Arial, sans-serif;
 }
@@ -78,15 +86,19 @@
     color: black;
     font-weight: 900;
     font-size: 24px;
-    margin-bottom: 35px;
+    margin-bottom: 54px;
     margin-top: 0;
+    line-height: 29.05px;
 }
 
 .modal__button {
     /* width: 361px; */
     width: 100%;
-    height: 52px;
-    margin-top: 46px;
+    height: 50.15px;
+    margin-top: 18.26px;
+    margin-bottom: 0;
+    /* margin-top: 18.26px; */
+    /* padding-top: 18.26px; */
     background-color: black;
     color: white;
     border: none;
@@ -103,20 +115,29 @@
 
 .modal__input {
     max-width: 358px;
-    width: 100%;
+    width: 97.767%;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    height: 38px;
+    /* height: 38px; */
     display: block;
-    padding: 0;
-    margin-top: 17px;
+    padding-bottom: 13.63px;
+    margin-bottom: 29.74px;
+    /* padding: 0; */
+    /* margin-top: 17px; */
     line-height: 15px;
     border-color: white;
     border-style: solid;
     border-bottom: 1px solid rgb(84, 84, 84, 0.2);
-
 }
+
+/* #card-url-input.modal__input {
+    margin-bottom: 0;
+} */
+
+/* .modal__input:last-child {
+    margin-bottom: 0;
+} */
 
 .modal__input::placeholder {
     opacity: 35%;
@@ -138,6 +159,11 @@
 }
 
 @media screen and (max-width: 581px) {
+    .modal__container{
+        padding: 25px 22px;
+        width: 282px;
+        box-sizing: border-box;
+    }
     /* .modal__image {
         max-width: 120vw;
         max-height: 26.5vh; */
@@ -163,6 +189,7 @@
     .modal__button {
         font-size: 14px;
         height: 46px;
+        margin-top: 16.26px;
     }
     /*.modal__input {
         font-size: 13.8px;
