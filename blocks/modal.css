@@ -14,6 +14,19 @@
     transition: opacity 0.5s linear;
     box-sizing: border-box; 
 }
+.modal__error_visible {
+    opacity: 1;
+    color: red;
+}
+
+/* #profile-title-input-error {
+    opacity: 1;
+    color: red;
+}
+#profile-title-input-error-visible {
+    opacity: 1;
+    color: red;
+} */
 
 #preview-image-container {
     background-color: rgba(0,0,0,0);
@@ -121,7 +134,7 @@
     font-size: 14px;
     /* height: 38px; */
     display: block;
-    padding-bottom: 13.63px;
+    padding-bottom: 11.63px;
     margin-bottom: 29.74px;
     /* padding: 0; */
     /* margin-top: 17px; */
@@ -191,6 +204,18 @@
         height: 46px;
         margin-top: 16.26px;
     }
+    .modal__button_disabled { 
+        color: white;
+    }
+    /* #p */
+    /* .modal__error_visible {
+        opacity: 1;
+        color: red;
+    }
+    .modal__input_type_error {
+        opacity: 1;
+        color: red;
+    } */
     /*.modal__input {
         font-size: 13.8px;
         height: 34px;
