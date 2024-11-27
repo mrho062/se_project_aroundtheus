@@ -3,44 +3,49 @@ function showInputError(formEl, inputEl, { inputErrorClass, errorClass }) {
   inputEl.classList.add(inputErrorClass);
   errorMessageEl.textContent = inputEl.validationMessage;
   errorMessageEl.classList.add(errorClass);
-};
+}
 
 function hideInputError(formEl, inputEl, { inputErrorClass, errorClass }) {
   const errorMessageEl = formEl.querySelector(`#${inputEl.id}-error`);
   inputEl.classList.remove(inputErrorClass);
   errorMessageEl.textContent = "";
   errorMessageEl.classList.remove(errorClass);
-};
+}
 
 function checkInputValidity(formEl, inputEl, options) {
   if (!inputEl.validity.valid) {
     showInputError(formEl, inputEl, options);
   }
   hideInputError(formEl, inputEl, options);
-};
+}
 
 function hasInvalidInput(inputList) {
-  return inputList.some((inputEl) => { return !inputEl.validity.valid });
-};
+  return inputList.some((inputEl) => {
+    return !inputEl.validity.valid;
+  });
+}
 
 function disableButton(submitButton, inactiveButtonClass) {
   submitButton.classList.remove(inactiveButtonClass);
   submitButton.disabled = true;
-};
+}
 
 function enableButton(submitButton, inactiveButtonClass) {
   submitButton.classList.add(inactiveButtonClass);
   submitButton.disabled = false;
-};
+}
 
 function toggleButtonState(inputEls, submitButton, inactiveButtonClass) {
   if (hasInvalidInput(inputEls)) {
     enableButton(submitButton, inactiveButtonClass);
   }
   disableButton(submitButton, inactiveButtonClass);
-};
+}
 
-const setEventListeners = (formEl, { inputSelector, submitButtonSelector, inactiveButtonClass, ...rest}) => {
+const setEventListeners = (
+  formEl,
+  { inputSelector, submitButtonSelector, inactiveButtonClass, ...rest }
+) => {
   // const { inputSelector, submitButtonSelector, inactiveButtonClass } = options;
   const inputEls = Array.from(formEl.querySelectorAll(inputSelector));
   const submitButton = formEl.querySelector(submitButtonSelector);
@@ -53,7 +58,7 @@ const setEventListeners = (formEl, { inputSelector, submitButtonSelector, inacti
   });
 };
 
-const enableValidation = ({formSelector, ...rest}) => {
+const enableValidation = ({ formSelector, ...rest }) => {
   const formEls = Array.from(document.querySelectorAll(formSelector));
   formEls.forEach((formEl) => {
     formEl.addEventListener("submit", (e) => {
@@ -64,4 +69,3 @@ const enableValidation = ({formSelector, ...rest}) => {
 };
 
 enableValidation(config);
-
