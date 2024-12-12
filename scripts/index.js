@@ -32,6 +32,7 @@ const initialCards = [
 ];
 
 /*Elements*/
+// const modalOpened = document.querySelector(".modal_opened");
 const profileEditButton = document.querySelector("#profile-edit-button");
 const profileEditModal = document.querySelector("#profile-edit-modal");
 const newCardAddButton = document.querySelector("#profile-add-button");
@@ -61,15 +62,33 @@ const placeholderText = document.querySelector(".modal__input::placeholder");
 /*Functions*/
 function closePopup(modal) {
   modal.classList.remove("modal_opened");
-
+  modal.removeEventListener("click", handleOverlayClick);
+  document.removeEventListener("keydown", handleEscKeyPress);
   // modal.classList.remove('show');
 }
 function openPopup(modal) {
   // modalContainer) {
+
   modal.classList.add("modal_opened");
   // modal.classList.add('show');
   //modalContainer.classList.add('show');
+  modal.addEventListener("click", handleOverlayClick);
+  document.addEventListener("keydown", handleEscKeyPress);
 }
+
+function handleOverlayClick(e) {
+  if (e.target === e.currentTarget) {
+    closePopup(e.currentTarget);
+  }
+}
+
+function handleEscKeyPress(e) {
+  if (e.key === "Escape") {
+    const activePopup = document.querySelector(".modal_opened");
+    closePopup(activePopup);
+  }
+}
+
 function getCardElement(cardData) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardImageEl = cardElement.querySelector(".card__image");
@@ -157,7 +176,7 @@ const config = {
   formSelector: ".modal__form",
   inputSelector: ".modal__input",
   submitButtonSelector: ".modal__button",
-  inactiveButtonClass: ".modal__button_disabled",
-  inputErrorClass: ".modal__input_type_error",
-  errorClass: ".modal__error_visible",
+  inactiveButtonClass: "modal__button_disabled",
+  inputErrorClass: "modal__input_type_error",
+  errorClass: "modal__error_visible",
 };
