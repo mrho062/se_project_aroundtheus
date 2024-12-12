@@ -155,8 +155,9 @@
     /* padding-top: 18.26px; */
     background-color: black;
     color: white;
-    border: none;
+    /* border: none; */
     border-radius: 2px;
+    border-width: 1px;
     font-family: 'Inter', Arial, sans-serif;
     font-weight: 100;
     font-size: 17px;
@@ -179,8 +180,14 @@
 
 
 .modal__button_disabled { 
-    color: white;
-    background-color: grey;
+    /* color: rgb(209, 206, 206); */
+    background-color: white;
+    color: black;
+    opacity: 20%;
+    
+}
+.modal__button_disabled:hover {
+    opacity: 20%;
 }
 
 
